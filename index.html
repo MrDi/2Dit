@@ -19,12 +19,16 @@
     h1{
         font-size: 5em;
         font-family: arial,helvetica;
-        color: #fff;
+        color: #000;
         margin:0;
     }
     .intro p{
         color: #fff;
     }
+        
+        .fp-controlArrow.fp-next,.fp-controlArrow.fp-prev {
+    display: none;
+}
 
     /* Centered texts in each section
     * --------------------------------------- */
@@ -65,22 +69,26 @@
 				fitToSectionDelay:50,
 				scrollBar:true,
 				loopHorizontal:true,
+                navigation: true,
+				navigationPosition: 'right',
 				onLeave: function(index, nextIndex, direction){
-					if(nextIndex == 3){
+					if(nextIndex == 2){
+                     $(".fp-controlArrow.fp-prev").css('display','none');
 					 //$.fn.fullpage.moveSlideRight();
 					//return false;
 					}
 				},
 			 onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
 			 console.log(direction);
-					if(nextSlideIndex == 0 && slideIndex == 3){
-					console.log(direction);
+                   
+					if(nextSlideIndex == 0 && slideIndex == 4){
+					
 					$.fn.fullpage.moveSectionDown();
 					return false;
 					}
 					
-					if(nextSlideIndex == 0 && slideIndex == 1){
-					console.log(direction);
+					if(nextSlideIndex == 4 && slideIndex == 0){
+					 $(".fp-controlArrow.fp-prev").css('display','none');
 					$.fn.fullpage.moveSectionUp();
 					return false;
 					}
@@ -97,20 +105,30 @@
 
 
 <ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">1</a></li>
+    <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">1</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">2</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>-->
 </ul>
 
 <div id="fullpage">
     <div class="section " id="section0">
         <div class="intro">
             
+            <h1>Разработка уникальных сайтов«под ключ» от 30 000 рублей</h1>
+            <p>уникальный и уютный дизайн вашего сайта превратит даже случайных посетителей в постоянных гостей</p>
+        </div>
+    </div>
+    
+    <div class="section " id="section1">
+        <div class="intro">
+            
             <h1>1</h1>
             <p></p>
         </div>
     </div>
-    <div class="section" id="section1">
+    
+    
+    <div class="section" id="section2">
         <div class="slide" id="slide1">
             <div class="intro">
                 <h1>2</h1>
@@ -141,11 +159,33 @@
                    4
                 </p>
         </div>
+        
+        <div class="slide" id="slide4">
+            <h1>2</h1>
+                <p>
+                   5
+                </p>
+        </div>
 
     </div>
-    <div class="section" id="section2">
+    <div class="section" id="section3">
         <div class="intro">
             <h1>3</h1>
+            <p></p>
+        </div>
+    </div>
+    
+    <div class="section" id="section4">
+        <div class="intro">
+            <h1>4</h1>
+            <p></p>
+        </div>
+    </div>
+    
+    
+    <div class="section" id="section5">
+        <div class="intro">
+            <h1>5</h1>
             <p></p>
         </div>
     </div>
