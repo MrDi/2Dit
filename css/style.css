@@ -71,7 +71,7 @@ p{
     text-align: left;
 }
 .section{
-	text-align:center;
+	text-align:left;
 }
 #menu li {
 	display:inline-block;
@@ -310,7 +310,7 @@ p{
     /* Centered texts in each section
     * --------------------------------------- */
     .section{
-        text-align:center;
+        text-align:left;
     }
 
 
@@ -354,4 +354,18 @@ h2 {
     font-size: 56px;
     text-align: left;
     color: #000;
+}
+#section0 {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.name_ser {
+    font-size: 23px;
+    color: #000;
+}
+
+.left-second {
+    font-size: 17px;
+    font-weight: 200;
 }
