@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaLightPro.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaNarrowPro.ttf");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaTextPro.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaMediumProRegular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaTextProBold.ttf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+@font-face {
+    font-family: "Etelka";
+    src: url("../fonts/EtelkaMediumProBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+

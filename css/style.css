@@ -48,7 +48,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	 font-family: 'Etelka';
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -65,9 +65,10 @@ p{
 	font-size: 2em;
 }
 .intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
+	    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: left;
 }
 .section{
 	text-align:center;
@@ -266,4 +267,91 @@ p{
 	background: rgba(255,255,255,0.7);
 	padding: 0px 5px;
 	line-height: 25px;
+}
+
+
+.top_first {
+    position: absolute;
+    width: 94%;
+    margin: 0 3%;
+    top: 70px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    left: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.container-full {
+    width: 94%;
+    margin: 0 3%;
+}
+ h1{
+       font-size: 4em;
+    font-family: 'Etelka';
+    color: #000;
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+    }
+    .intro p{
+        color: #fff;
+    }
+        
+        .fp-controlArrow.fp-next,.fp-controlArrow.fp-prev {
+    display: none;
+}
+
+    /* Centered texts in each section
+    * --------------------------------------- */
+    .section{
+        text-align:center;
+    }
+
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+
+.button.first {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.92);
+    padding: 13px 44px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.intro.container-full p {
+    color: #000;
+    font-weight: 300;
+}
+
+.first_tittle {
+    margin-top: 23px;
+}
+
+.bottom_first {
+    position: absolute;
+    bottom: 70px;
+     width: 94%;
+    margin: 0 3%;
+        text-align: left;
+}
+
+.intro.container-sm {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 56px;
+    text-align: left;
+    color: #000;
 }
