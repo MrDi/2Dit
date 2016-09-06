@@ -304,9 +304,10 @@ p{
         color: #fff;
     }
         
-        .fp-controlArrow.fp-next,.fp-controlArrow.fp-prev {
+        .fp-controlArrow.fp-prev {
     display: none;
 }
+
 
     /* Centered texts in each section
     * --------------------------------------- */
@@ -328,7 +329,14 @@ p{
     text-transform: uppercase;
     border-radius: 3px;
 }
-
+.fp-controlArrow.fp-next {
+    height: 100vh;
+    top: 128px;
+    border: none;
+    background: rgba(159, 159, 159, 0.37);
+    width: 75px;
+    right: 0;
+}
 .intro.container-full p {
     color: #000;
     
@@ -570,7 +578,7 @@ h2 {
 .right-block {
     position: absolute;
     top: 17%;
-    left: 1.24%;
+    left: 1.48%;
 }
 
 .left-block {
@@ -715,4 +723,5 @@ p.name_keys_sm {
     text-transform: uppercase;
     font-size: 19px;
     font-weight: 100;
+    cursor: pointer;
 }
