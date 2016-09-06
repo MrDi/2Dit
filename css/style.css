@@ -330,12 +330,17 @@ p{
     border-radius: 3px;
 }
 .fp-controlArrow.fp-next {
-    height: 100vh;
+      height: 100vh;
     top: 128px;
     border: none;
-    background: rgba(159, 159, 159, 0.37);
-    width: 75px;
+    background: rgba(182, 186, 179, 0.37);
+    background-image: url(../images/Arrow-Right.svg);
+    width: 100px;
     right: 0;
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    cursor: pointer;
 }
 .intro.container-full p {
     color: #000;
@@ -392,6 +397,17 @@ h2 {
     background-size: cover;
     background-position: center;
 }
+div#slide1 {
+      background: url(../images/background3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+div#slide2 {
+      background: url(../images/background4_case1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .name_ser {
     font-size: 23px;
     color: #000;

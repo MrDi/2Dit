@@ -12,6 +12,8 @@ $(document).ready(function () {
         scrollBar: true,
         loopHorizontal: true,
         navigation: true,
+        resetSliders:true,
+        lockAnchors:true,
         navigationPosition: 'right',
         onLeave: function (index, nextIndex, direction) {
             if (nextIndex == 2) {
@@ -31,8 +33,10 @@ $(document).ready(function () {
             if (nextIndex == 3) {
                 $right_block.addClass('anim_sl');
                 $("#fp-nav").css('display', 'none');
-                $(".fp-controlArrow.fp-next").css('display', 'none');
-                /*  $(".header").addClass('header-fixed');*/
+               if(direction == 'down'){
+                    $(".fp-controlArrow.fp-next").fadeOut();
+               }
+                /*  $(".header").addClass('header-fixed');direction:down*/
 
 
             }
