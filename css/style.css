@@ -657,9 +657,9 @@ p.name_keys_sm {
     -moz-transform: translateX(-15px) translateY(-15px);
     -ms-transform: translateX(-15px) translateY(-15px);
     transform: translateX(-15px) translateY(-15px);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    transition-duration: 1s;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    transition-duration: 2s;
     
     -webkit-transition-delay: 2s;
     
@@ -677,15 +677,15 @@ p.name_keys_sm {
     -ms-transform: translateX(-30px) translateY(-30px);
    
     transform: translateX(-30px) translateY(-30px);
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    transition-delay: 3s;
+    -webkit-transition-delay: 2.5s;
+    -moz-transition-delay: 2.5s;
+    transition-delay: 2.5s;
    
     -webkit-transition-duration: 2s;
    
-    -moz-transition-duration: 2s;
+    -moz-transition-duration:2s;
    
-    transition-duration: 2s
+    transition-duration: 2s;
 }
 
 .anim_sl img.img4 {
@@ -693,9 +693,9 @@ p.name_keys_sm {
     -moz-transform: translateX(-45px) translateY(-45px);
     -ms-transform: translateX(-45px) translateY(-45px);
     transform: translateX(-45px) translateY(-45px);
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    transition-delay: 4s;
+    -webkit-transition-delay: 3s;
+    -moz-transition-delay: 3s;
+    transition-delay: 3s;
     -webkit-transition-duration: 2s;
     -moz-transition-duration: 2s;
     transition-duration: 2s;
