@@ -35,7 +35,7 @@
                 anchors: ['firstPage', 'secondPage', '3rdPage'],
                 autoScrolling: true,
 				fitToSection:true,
-				fitToSectionDelay:50,
+				fitToSectionDelay:200,
 				scrollBar:true,
 				loopHorizontal:true,
                 navigation: true,
@@ -46,7 +46,32 @@
 					 //$.fn.fullpage.moveSlideRight();
 					//return false;
 					}
+                    
+                    if(nextIndex == 2){
+                     $(".right-second").addClass('anim_sheet');
+                   /*  $(".header").addClass('header-fixed');*/
+                        
+					
+					}
+                    if(nextIndex == 1){
+                     
+                     $(".header").removeClass('header-fixed');
+                    
+					
+					}
+                    
 				},
+                afterLoad: function(anchorLink, index){
+                    
+                    
+                    
+                     if(index == 2){
+                     
+                     $(".header").addClass('header-fixed');
+                        
+					
+					}
+                },
 			 onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
 			 console.log(direction);
                    
@@ -73,16 +98,19 @@
 <body>
 
 
-<ul id="menu">
-    <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">1</a></li>
+<!--<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">1</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">2</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>-->
-</ul>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">3</a></li>
+</ul>-->
 
 <div id="fullpage">
     <div class="section " id="section0">
         <div class="top_first">
-                <div class="logo">2dit</div>
+                <div class="logo">
+         <a href="/"><img src="images/2Dit_logo.svg" /></a>
+               
+                </div>
                 <div class="button first">Связаться с нами</div>
             </div>
         <div class="intro container-full">
@@ -101,6 +129,18 @@
     </div>
     
     <div class="section " id="section1">
+      <div class="header">
+           <div class="container-full">
+               <div class="logo-fix">
+         <a href="/"><img src="images/2Dit_logo-fix.svg" /></a>
+               
+                </div>
+                <div class="button first fix">Связаться с нами</div>
+        </div>
+      </div>
+      
+        
+        
         <div class="intro container-sm">
             <h2>Мы предлагаем</h2>
             <div class="fl_bl">
@@ -112,28 +152,58 @@
                 </div>
                 <div class="bottom">
                       <div class="name_ser">Продуманный сайт</div>
-                    <div class="bord_img two"> <img style="position: relative;top: -76px;" src="images/slide2_borders2.svg" /></div>
+                    <div class="bord_img two"> <img style="position: relative;top: -71px;" src="images/slide2_borders2.svg" /></div>
                     <div>решение, ориентированное на задачи конкретного бизнеса</div>
                 </div>
             </div>
             <div class="right-second">
                 <div class="name_ser">Информативный сайт</div>
-                <div></div>
+                <div><img style="height: 21px;margin-top: -16px;margin-bottom: -4px;" src="images/slide2_borders3.svg" /></div>
                 <div>действенный инструмент распространения информации</div>
             </div> 
             </div>
            
         </div>
+        
+       
     </div>
     
     
     <div class="section" id="section2">
         <div class="slide" id="slide1">
             <div class="intro">
-                <h1>2</h1>
-                <p>
-                   Мы предлагаем
+            <div class="slide3">
+                <div class="right-block">
+                 <img src="images/slide3_pic1.png"/>
+                 <img src="images/slide3_pic2.png"/>
+                 <img src="images/slide3_pic3.png"/>
+                 <img src="images/slide3_pic4.png"/>
+             </div>
+              <div class="left-block">
+                  <div class="top_opis">
+                   <h2>Кейс</h2>
+                <p class="name_keys">
+                  Универсум
                 </p>
+                <p class="name_keys_sm">
+                  сервисный центр
+                </p>
+               </div>
+               <div class="slovo">
+                   <div class="bloquete">Сайт был недостающим звеном в линии развития компании. Качественный уровень разработки нового сайта укрепил восприятие бренда как современной динамично развивающейся компании.</div>
+                   
+               </div>
+               <div class="name_of_slovo">
+                       Алексей Выставной,<br><span>генеральный директор</span>
+                   </div> 
+              </div>
+              <div class="bottom-block">
+                  <div class="see_project">Смотерть проект</div>
+              </div> 
+            </div>
+            
+              
+                
             </div>
         </div>
 
@@ -190,5 +260,8 @@
     </div>
 </div>
 
+ 
+        
+        
 </body>
 </html>
