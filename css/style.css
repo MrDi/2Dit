@@ -342,12 +342,7 @@ p{
     background-position: 50% 40%;
     cursor: pointer;
 }
-.intro.container-full p {
-    color: #000;
-    
-    
-    font-weight: 300;
-}
+
 
 
 .logo-fix img {
@@ -371,7 +366,7 @@ p{
 }
 
 .intro.container-sm {
-    width: 1000px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -404,6 +399,12 @@ div#slide1 {
 }
 div#slide2 {
       background: url(../images/background4_case1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#slide3 {
+      background: url(../images/background5_case2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -598,7 +599,7 @@ div#slide2 {
 }
 
 .left-block {
-    height: 500px;
+   /* height: 500px;*/
 }
 
 .left-block {
@@ -740,4 +741,101 @@ p.name_keys_sm {
     font-size: 19px;
     font-weight: 100;
     cursor: pointer;
+}
+.intro p {
+    color: #000;
+}
+h1.big120 {
+    font-size: 120px;
+    color: #d6d7dc;
+        margin-bottom: 45px;
+    font-weight: 100;
+}
+.intro .big50 {
+    font-size: 50px;
+}
+
+.intro .big72 {
+    font-size: 72px;
+    font-weight: 500;
+}
+
+p.small20 {
+        font-size: 20px;
+    font-weight: 100;
+    color: #8a8a8a;
+    margin: 18px 0;
+    width: 501px;
+}
+
+.left-grid {
+    width: 50%;
+}
+.right-grid.absolute.notebook {
+    position: absolute;
+    top: 9%;
+    right: 0;
+    text-align: right;
+}
+
+.right-grid.absolute.notebook img {
+        width: 100%;
+}
+
+p.logo_univ {
+    margin-top: 54px;
+}
+p.logo_univ img {
+    width: 7%;
+}
+
+.center>*,.center> p.small20  {
+       text-align: center;
+    width: 67%;
+    margin: 27px auto;
+    padding: 0;
+}
+
+h2.slide4_h2 {
+    text-align: left;
+    font-size: 120px;
+    color: #d6d7dc;
+    font-weight: 100;
+        margin-bottom: 50px;
+}
+.intro .small42 {
+    font-size: 42px;
+}
+
+img.img_note {
+    width: 100%;
+    position: relative;
+    right: 47px;
+    -webkit-transform: perspective(1000px) rotateX(15deg);
+    -moz-transform: perspective(1000px) rotateX(15deg);
+    transform: perspective(1000px) rotateX(15deg);
+}
+
+
+.anim_note img.img_note {
+   
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    transition-duration: 2s;
+    
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    
+    -moz-transform: perspective(1000px) rotateX(0deg);
+    
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+
+
+.notebook.right {
+    position: absolute;
+    width: 50%;
 }

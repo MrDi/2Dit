@@ -68,6 +68,10 @@ $(document).ready(function () {
             if (nextSlideIndex == 0) {
                 $(".fp-controlArrow.fp-next").fadeOut();
             }
+            
+            if (nextSlideIndex == 3) {
+                $(".notebook.right").addClass('anim_note');
+            }
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
 
@@ -79,7 +83,7 @@ $(document).ready(function () {
                 $(".fp-controlArrow.fp-prev").css('display', 'none');
 
                 $.fn.fullpage.moveSectionUp();
-                return false;
+                return false;//.notebook.right anim_note
             }
         },
         afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
