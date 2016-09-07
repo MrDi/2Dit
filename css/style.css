@@ -408,6 +408,22 @@ div#slide3 {
     background-size: cover;
     background-position: center;
 }
+div#slide4 {
+    background: url(../images/background6_case3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+}
+
+div#slide5 {
+    background: url(../images/background7_case4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+}
+.right-grid {
+    position: absolute;
+}
 
 .name_ser {
     font-size: 23px;
@@ -745,7 +761,7 @@ p.name_keys_sm {
 .intro p {
     color: #000;
 }
-h1.big120 {
+h2.big120 {
     font-size: 120px;
     color: #d6d7dc;
         margin-bottom: 45px;
@@ -767,6 +783,19 @@ p.small20 {
     margin: 18px 0;
     width: 501px;
 }
+
+.left-block.w70 h2.big120.black {
+    color: #000;
+    font-weight: 400;
+    text-align: right;
+}
+.left-block.w70 .small20 {
+       text-align: right;
+    width: 52%;
+    margin-left: 48%;
+}
+
+
 
 .left-grid {
     width: 50%;
@@ -838,4 +867,9 @@ img.img_note {
 .notebook.right {
     position: absolute;
     width: 50%;
+}
+
+.left-block.w70 {
+    width: 60%;
+    left: 30%;
 }
