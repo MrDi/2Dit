@@ -72,9 +72,14 @@ $(document).ready(function () {
             if (nextSlideIndex == 3) {
                 $(".notebook.right").addClass('anim_note');
             }
+            
+            if (nextSlideIndex == 4) {
+                $(".img_page1,.img_page2,.img_page3,.img_page4").addClass('anim');
+            }
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
-
+  /* $(".img_page1,.img_page2,.img_page3,.img_page4").removeClass('anim');
+                if($(".img_page1").*/
                 $.fn.fullpage.moveSectionDown();
                 return false;
             }
