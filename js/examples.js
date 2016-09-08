@@ -1,7 +1,14 @@
 $(document).ready(function () {
 
-    var $right_block = $(".right-block");
-
+    var $right_block = $(".right-block"),
+     $note = $("img.note"),
+      $right_second =  $(".right-second"),
+        $header = $(".header"),
+        $img_page = $(".img_page1,.img_page2,.img_page3,.img_page4");
+var layout1 = document.querySelector(".img_page1"),
+    layout2 = document.querySelector(".img_page2"),
+    layout3 = document.querySelector(".img_page3"),
+    layout4 = document.querySelector(".img_page4");//,.img_page2,.img_page3,.img_page4
 
     $('#fullpage').fullpage({
         menu: '#menu',
@@ -24,7 +31,7 @@ $(document).ready(function () {
             }
 
             if (nextIndex == 2) {
-                $(".right-second").addClass('anim_sheet');
+                $right_second.addClass('anim_sheet');
                 /*  $(".header").addClass('header-fixed');*/
 
 
@@ -44,7 +51,7 @@ $(document).ready(function () {
 
             if (nextIndex == 1) {
 
-                $(".header").removeClass('header-fixed');
+              $header.removeClass('header-fixed');
 
 
             }
@@ -58,7 +65,7 @@ $(document).ready(function () {
 
             if (index != 1) {
 
-                $(".header").addClass('header-fixed');
+               $header.addClass('header-fixed');
             }
 
         },
@@ -69,12 +76,22 @@ $(document).ready(function () {
                 $(".fp-controlArrow.fp-next").fadeOut();
             }
             
+            if (nextSlideIndex == 1) {
+              $note.after('<img class="note_gif" src="images/notebook_landind.gif" />');
+            }
+            
             if (nextSlideIndex == 3) {
                 $(".notebook.right").addClass('anim_note');
             }
             
             if (nextSlideIndex == 4) {
-                $(".img_page1,.img_page2,.img_page3,.img_page4").addClass('anim');
+             //   $img_page.addClass('anim');
+            
+                layout1.classList.add("anim");
+                layout2.classList.add("anim");
+                layout3.classList.add("anim");
+                layout4.classList.add("anim");
+                
             }
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
@@ -96,6 +113,11 @@ $(document).ready(function () {
             if (slideIndex != 0) {
                 $(".fp-controlArrow.fp-next").fadeIn();
             }
+            
+            //note
+             /*if (slideIndex == 1) {
+               $(".note").after('<img class="note_gif" src="images/notebook_landind.gif" />');
+            }*/
         }
     });
 
@@ -103,6 +125,31 @@ $(document).ready(function () {
     $(".see_project").click(function () {
         $.fn.fullpage.moveSlideRight();
     });
-
-
+    
+    
+    //.button.first
+function toggleClassMenu() {
+   
+ if(myForm.classList.contains("show_form")) {
+     myForm.classList.remove("show_form");
+     fullPage.classList.remove("show_modal");
+     
+  } else {
+   
+      myForm.classList.add("show_form");
+      fullPage.classList.add("show_modal");
+  }
+    
+  
+ 
+}
+    
+    
+    var myBtn = document.querySelector(".button"),
+          myForm = document.querySelector(".form_left_modal"),
+         fullPage = document.querySelector(".modal_back");
+    
+   
+myBtn.addEventListener("click", toggleClassMenu, false);
+fullPage.addEventListener("click", toggleClassMenu, false);
 });

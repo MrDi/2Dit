@@ -160,7 +160,8 @@
            </div>
            
             <div class="right-grid absolute notebook">
-               <img src="images/slide4_notebook.png" />
+               <img class="note" src="images/slide4_notebook.png" />
+<!--               <img class="note_gif" src="images/notebook_landind.gif" />-->
            </div>
           </div>
             
@@ -289,24 +290,34 @@
     <div class="section" id="section4">
          <div class="intro container-sm flex-center">
             <h2 class="slide4_h2">Мы готовы выполнить <br>такую работу для вас!</h2>
-            <form id="form1" class="myform">
+            <div class="flex-block_form">
+                  <div class="form-left">
+                  <form id="form1" class="myform">
                         <div class="line_input">
-                           <div>
-                                 <div>
-                                     <label for="phone_email" >Ваш номер телефона или email</label>
+                           <div class="inp_div">
+                                 <div class="label_div">
+                                     <label for="phone_email" class="small24">Ваш номер телефона или email</label>
                                  </div>
-                                 <div>
-                                     <input type="text" class="phones_email" name="phone_email" placeholder="Ваш номер телефона или email">
+                                 <div class="input_div">
+                                     <input type="text" class="phones_email" name="phone_email" placeholder="">
                                  </div>
                                  
                            </div>
-                          <div>
+                          <div class="inp_div">
                               <input type="button" class="my_feed_button phone btn" id="feed_button1" name="butt2" value="Обсудить проект">
                           </div>
                             
                         </div>
 
             </form>
+            </div>
+          <div class="right-grid-form">
+              <p class="small42">звоните сейчас!</p>
+              <p class="small69 phone_number">8 960 991 2006</p>
+              <p class="small36 mail">mail@2dit.ru</p>
+          </div> 
+            </div>
+         
 
             </div>
     </div>
@@ -318,10 +329,11 @@
             <p></p>
         </div>
     </div>
+  
 </div>
 
- 
-        
+   <div class="form_left_modal"></div>
+   <div class="modal_back"></div>   
         
 </body>
 </html>
