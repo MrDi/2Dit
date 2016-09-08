@@ -421,6 +421,12 @@ div#slide5 {
     background-repeat: no-repeat;
     background-position: 0 -13px;
 }
+
+#section3 {
+    background: url(../images/background8.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .right-grid {
     position: absolute;
 }
@@ -1157,3 +1163,81 @@ img.img_page4.anim {
     justify-content: flex-end;
 }
 
+
+.big92 {
+    font-size: 92px;
+}
+
+.intro .small32 {
+    font-size: 32px;
+}
+
+.intro .small22 {
+    font-size: 22px;
+}
+
+.grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 41px;
+}
+.grid > div {
+    width: 49%;
+    border: 1px solid #8d8d8d;
+    padding: 2%;
+    border-radius: 8px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+        margin: 13px 0;
+}
+.grid > div > h3 {
+    font-weight: 100;
+}
+
+.intro .grid p.small22 {
+    font-weight: 100;
+    color: #8d8d8d;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.intro .grid  p.small32.price {
+    font-weight: 100;
+    text-align: right;
+    margin-top: 42px;
+}
+
+.intro .grid .box-1 p.small32.price {
+    color: #6669ea;
+}
+
+.intro .grid .box-2 p.small32.price {
+    color: #86e7a4;
+}
+
+.intro .grid .box-3 p.small32.price {
+    color: #e55d77;
+}
+
+.intro .grid .box-4 p.small32.price {
+    color: #f7ca5f;
+}
+
+.intro.container-sm.service .big92 {
+    margin-bottom: 10px;
+}
+
+.intro.container-sm.service {
+    margin-top: 80px;
+}
