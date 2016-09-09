@@ -5,10 +5,14 @@ $(document).ready(function () {
       $right_second =  $(".right-second"),
         $header = $(".header"),
         $img_page = $(".img_page1,.img_page2,.img_page3,.img_page4");
-var layout1 = document.querySelector(".img_page1"),
-    layout2 = document.querySelector(".img_page2"),
-    layout3 = document.querySelector(".img_page3"),
-    layout4 = document.querySelector(".img_page4");//,.img_page2,.img_page3,.img_page4
+var $layout1 = document.querySelector(".img_page1"),
+    $layout2 = document.querySelector(".img_page2"),
+    $layout3 = document.querySelector(".img_page3"),
+    $layout4 = document.querySelector(".img_page4"),
+    $myBtn = document.querySelector(".button"),
+    $myForm = document.querySelector(".form_left_modal"),
+    $fullPage = document.querySelector(".modal_back"),
+    $button_fix = document.querySelector(".button_fix");
 
     $('#fullpage').fullpage({
         menu: '#menu',
@@ -87,10 +91,10 @@ var layout1 = document.querySelector(".img_page1"),
             if (nextSlideIndex == 4) {
              //   $img_page.addClass('anim');
             
-                layout1.classList.add("anim");
-                layout2.classList.add("anim");
-                layout3.classList.add("anim");
-                layout4.classList.add("anim");
+                $layout1.classList.add("anim");
+                $layout2.classList.add("anim");
+                $layout3.classList.add("anim");
+                $layout4.classList.add("anim");
                 
             }
 
@@ -130,14 +134,14 @@ var layout1 = document.querySelector(".img_page1"),
     //.button.first
 function toggleClassMenu() {
    
- if(myForm.classList.contains("show_form")) {
-     myForm.classList.remove("show_form");
-     fullPage.classList.remove("show_modal");
+ if($myForm.classList.contains("show_form")) {
+     $myForm.classList.remove("show_form");
+     $fullPage.classList.remove("show_modal");
      
   } else {
    
-      myForm.classList.add("show_form");
-      fullPage.classList.add("show_modal");
+      $myForm.classList.add("show_form");
+      $fullPage.classList.add("show_modal");
   }
     
   
@@ -145,11 +149,10 @@ function toggleClassMenu() {
 }
     
     
-    var myBtn = document.querySelector(".button"),
-          myForm = document.querySelector(".form_left_modal"),
-         fullPage = document.querySelector(".modal_back");
+  
     
    
-myBtn.addEventListener("click", toggleClassMenu, false);
-fullPage.addEventListener("click", toggleClassMenu, false);
+$myBtn.addEventListener("click", toggleClassMenu, false);
+$fullPage.addEventListener("click", toggleClassMenu, false);
+    $button_fix.addEventListener("click", toggleClassMenu, false);
 });

@@ -1346,7 +1346,32 @@ img.note_gif {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 200;
     height: 100%;
+    cursor: pointer;
     
+}
+
+.form_modal {
+    height: 100%;
+}
+
+.modal_flex {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
 }
