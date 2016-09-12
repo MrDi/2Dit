@@ -7,6 +7,9 @@ $(document).ready(function () {
     $img_page = $(".img_page1,.img_page2,.img_page3,.img_page4");
     
     var $layout1 = document.querySelector(".img_page1"),
+       $back1 = document.querySelector(".back-1"),
+         $slide3_text = document.querySelector(".intro.container-sm.center"),
+         $back2 = document.querySelector(".back-2"),
     $layout2 = document.querySelector(".img_page2"),
     $layout3 = document.querySelector(".img_page3"),
     $layout4 = document.querySelector(".img_page4"),
@@ -34,19 +37,14 @@ $(document).ready(function () {
         resetSliders: true,
         lockAnchors: true,
         navigationPosition: 'right',
-        ////////////////////////////////////////////////////////////////////
         onLeave: function (index, nextIndex, direction) {
-              console.log('onLeave:Я покинул страницу'+ index);
-              console.log('onLeave:Я нахожусь на странице'+ nextIndex);
+        
             if (nextIndex == 2) {
                 $(".fp-controlArrow.fp-prev").css('display', 'none');
-
             }
-
             if (nextIndex == 2) {
                 $right_second.addClass('anim_sheet');
             }
-
             if (nextIndex == 3) {
                 $right_block.addClass('anim_sl');
                 $("#fp-nav").css('display', 'none');
@@ -54,29 +52,22 @@ $(document).ready(function () {
                     $(".fp-controlArrow.fp-next").fadeOut();
                } 
             }
-            
             if (nextIndex == 1) {
 
               $header.removeClass('header-fixed');
 
 
             }
-            
             if (nextIndex == 3 && direction=='up') {
 
-              /* $case_bool=true;*/
+              
             }
                if (nextIndex == 3){
                    $case_bool = true;  
                }
-            
            
-             if (nextIndex == 4) {
-                
-               
-             
-               if($case_bool && !$slide_finish){
-                 
+             if (nextIndex == 4 && $case_bool && !$slide_finish && !$slide_first ) {
+ 
                    if(direction == 'up'){
                      $.fn.fullpage.moveSlideLeft();
                    }
@@ -87,15 +78,10 @@ $(document).ready(function () {
                        }
                     return false;
                }
-                 
-                 
-                   }
-            
-            if(index == 3 && nextIndex == 2 ){
+    
+            if(index == 3 && nextIndex == 2 && $case_bool && !$slide_first  ){
                 
-                 if($case_bool && !$slide_first){
-                     
-                      if(direction == 'up'){
+                    if(direction == 'up'){
                      $.fn.fullpage.moveSlideLeft();
                    }
                    else
@@ -104,31 +90,17 @@ $(document).ready(function () {
                           
                        }
                     return false;
-                 }
+           
                 
             }
-               /*  if($slide_finish){
-                
-                      if(direction=='up'){
-                     $.fn.fullpage.moveSlideLeft();
-                         
-                   }
-                   else{
-                      $.fn.fullpage.moveSlideRight();
-                   }
-                    return false;
-               
-            }*/
+            
 
         },
         afterLoad: function (anchorLink, index) {
-             console.log('afterLoad:Я пришел на страницу'+ index);
-             
-            
+   
             if (index != 3) {
                 $("#fp-nav").css('display', 'block');
-               
-                
+      
             }
 
             if (index != 1) {
@@ -136,28 +108,28 @@ $(document).ready(function () {
                $header.addClass('header-fixed');
             }
             
-            
-            
 
         },
         onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
-
-  
-            console.log('onSlideLeave:Я покинул слайд'+ slideIndex);
-            console.log('onSlideLeave:Я пришел на слайд'+ nextSlideIndex);
-            if (nextSlideIndex == 0) {
+            if (nextSlideIndex == 1) {
+                
+                  var img = document.getElementById('gif_anim');
+                   img.src = "images/notebook_landind.gif?" + new Date().getTime();
+       /*  $note.src = $note.src;*/
+                
+             /*   $note.after('<img class="note_gif" src="images/notebook_landind.gif" />');*/
+                
+            }
+            if (nextSlideIndex === 0) {
                 $(".fp-controlArrow.fp-next").fadeOut();
-              /*  $case_bool=false;
-                $slide_first=true;*/
             }
             
             if(slideIndex == 0 && nextSlideIndex == 1){
                 $slide_first = false;
             }
             
-            
             if(slideIndex == 4 && nextSlideIndex == 0){
-            $slide_finish = true;
+                $slide_finish = true;
             }
             else{
                 $slide_finish = false;
@@ -168,35 +140,25 @@ $(document).ready(function () {
                  $slide_first = true;
             }
             
-            if (nextSlideIndex != 0) {
-           
-                
-            }
-            
-            if (nextSlideIndex == 1) {
-              $note.after('<img class="note_gif" src="images/notebook_landind.gif" />');
-           /* $case_bool = true;*/
-           
-           
+            if (nextSlideIndex == 2) {
+               
+                 $back1.classList.add("anim_back");
+                $back2.classList.add("anim_back");
+                $slide3_text.classList.add("anim");
                 
                 
             }
             
             if (nextSlideIndex == 3) {
                 $(".notebook.right").addClass('anim_note');
+               
             }
             
             if (nextSlideIndex == 4) {
-           
-            
                 $layout1.classList.add("anim");
                 $layout2.classList.add("anim");
                 $layout3.classList.add("anim");
-                $layout4.classList.add("anim");
-            
-                
-            
-                
+                $layout4.classList.add("anim"); 
             }
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
@@ -205,9 +167,7 @@ $(document).ready(function () {
                 return false;
                 
             }
-            
-           
-                
+
             if (nextSlideIndex == 4 && slideIndex == 0) {
                 $(".fp-controlArrow.fp-prev").css('display', 'none');
                 $.fn.fullpage.moveSectionUp();
@@ -219,9 +179,17 @@ $(document).ready(function () {
             if (slideIndex != 0) {
                 $(".fp-controlArrow.fp-next").fadeIn();
             }
+              if (slideIndex == 1) {
+                 
+                 /*  var img = document.getElementById('gif_anim');
+                   img.src = "images/notebook_landind.gif?" + new Date().getTime();*/
+                 /* $note.src = $note.src;*/
+             
+            }
+            
             
             if(slideIndex==4){
-                console.log('последйний слайд');
+               
                 $slide_finish=true;
             }
         }
@@ -239,7 +207,7 @@ $(document).ready(function () {
          $("#form2 > .line_input").removeClass('hide');
         $("#form2 .message_ok").fadeOut();
           
-      }, 500)
+      }, 500);
 
        
     });
