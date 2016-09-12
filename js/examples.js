@@ -10,6 +10,7 @@ $(document).ready(function () {
        $back1 = document.querySelector(".back-1"),
          $slide3_text = document.querySelector(".intro.container-sm.center"),
          $back2 = document.querySelector(".back-2"),
+          $progress = $("#progress"),
     $layout2 = document.querySelector(".img_page2"),
     $layout3 = document.querySelector(".img_page3"),
     $layout4 = document.querySelector(".img_page4"),
@@ -58,6 +59,14 @@ $(document).ready(function () {
 
 
             }
+            
+             if (nextIndex == 4) {
+    console.log('4');
+              $header.removeClass('header-fixed');
+
+
+            }
+            
             if (nextIndex == 3 && direction=='up') {
 
               
@@ -103,7 +112,7 @@ $(document).ready(function () {
       
             }
 
-            if (index != 1) {
+            if (index != 1 && index != 3) {
 
                $header.addClass('header-fixed');
             }
@@ -122,6 +131,7 @@ $(document).ready(function () {
             }
             if (nextSlideIndex === 0) {
                 $(".fp-controlArrow.fp-next").fadeOut();
+                 $progress.removeClass();
             }
             
             if(slideIndex == 0 && nextSlideIndex == 1){
@@ -139,18 +149,24 @@ $(document).ready(function () {
                 
                  $slide_first = true;
             }
-            
+            if (nextSlideIndex == 1) {
+                $progress.removeClass().addClass('pos1');
+            }
             if (nextSlideIndex == 2) {
                
                  $back1.classList.add("anim_back");
                 $back2.classList.add("anim_back");
                 $slide3_text.classList.add("anim");
+               $progress.removeClass().addClass('pos2');
+                   $(".swing").addClass('anim');
+              
                 
                 
             }
             
             if (nextSlideIndex == 3) {
                 $(".notebook.right").addClass('anim_note');
+                   $progress.removeClass().addClass('pos3');
                
             }
             
@@ -159,6 +175,7 @@ $(document).ready(function () {
                 $layout2.classList.add("anim");
                 $layout3.classList.add("anim");
                 $layout4.classList.add("anim"); 
+                   $progress.removeClass().addClass('pos4');
             }
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
