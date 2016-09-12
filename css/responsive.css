@@ -324,6 +324,7 @@ div#section2 .intro {
     input.inp2 {
     width: 100%;
         height: 42px;
+            font-size: 17px;
     }
     input#feed_button2 {
 
@@ -338,6 +339,36 @@ div#section2 .intro {
 }
     #slide4 {
     padding-top: 10px;
+}
+    
+    .mouse {
+    font-weight: 100;
+    font-size: 18px;
+}
+    .mouse:before {
+    content: '';
+    width: 27px;
+    height: 42px;
+    background: url(../images/mouse_icon.svg);
+    display: inline-block;
+    margin-right: 18px;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+    
+    .button.first {
+   
+    font-size: 15px;
+  
+}
+    
+    .button.first:before {
+  
+    width: 35px;
+    height: 26px;
+  
 }
 }
     
