@@ -130,9 +130,22 @@ var $layout1 = document.querySelector(".img_page1"),
         $.fn.fullpage.moveSlideRight();
     });
     
+    $(".x-button-2").click(function () {
+        $myForm.classList.remove("show_form");
+      $fullPage.classList.remove("show_modal");
+      setTimeout(function() { 
+         $("#form2 > .line_input").removeClass('hide');
+        $("#form2 .message_ok").fadeOut();
+          
+      }, 500)
+
+       
+    });
+    
+    
     
     //.button.first
-function toggleClassMenu() {
+function toggleClassMenu() {   
    
  if($myForm.classList.contains("show_form")) {
      $myForm.classList.remove("show_form");
@@ -143,16 +156,10 @@ function toggleClassMenu() {
       $myForm.classList.add("show_form");
       $fullPage.classList.add("show_modal");
   }
-    
-  
  
 }
     
-    
-  
-    
-   
 $myBtn.addEventListener("click", toggleClassMenu, false);
 $fullPage.addEventListener("click", toggleClassMenu, false);
-    $button_fix.addEventListener("click", toggleClassMenu, false);
+$button_fix.addEventListener("click", toggleClassMenu, false);
 });

@@ -25,7 +25,7 @@
     <script type="text/javascript" src="js/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
-   
+    <script type="text/javascript" src="js/validate.js"></script>
 
 </head>
 <body>
@@ -299,7 +299,7 @@
                                      <label for="phone_email" class="small24">Ваш номер телефона или email</label>
                                  </div>
                                  <div class="input_div">
-                                     <input type="text" class="phones_email" name="phone_email" placeholder="">
+                                     <input type="text" class="phones_email valid" name="phone_email" placeholder="">
                                  </div>
                                  
                            </div>
@@ -308,6 +308,18 @@
                           </div>
                             
                         </div>
+                        <div class="message_ok">
+                            <div class="b-form-success">
+    <p class="e-heading">Спасибо!</p>
+
+    <p>Ваша заявка принята .</p>
+    <p>Мы рады вашей заинтересованности и <br>постараемся оперативно <br>ответить вам.</p>
+    
+    
+    
+</div>
+                        </div>
+                       
 
             </form>
             </div>
@@ -337,33 +349,33 @@
            <div class="modal_flex">
                  <form id="form2" class="myform">
                         <div class="line_input">
-                            <div class="tittle">Обсудить проект</div>
+                            <div class="tittle small46">Обсудить проект</div>
                             <div class="inp_div">
                                  <div class="label_div">
-                                     <label for="phone_email" class="small24">Имя</label>
+                                     <label for="name" class="small24">Имя</label>
                                  </div>
                                  <div class="input_div">
-                                     <input type="text" class="names" name="name" placeholder="">
+                                     <input type="text" class="names inp2" name="name" placeholder="">
                                  </div>
                                  
                            </div>
                            
                            <div class="inp_div">
                                  <div class="label_div">
-                                     <label for="phone_email" class="small24">Ваш номер телефона или email</label>
+                                     <label for="phone_email" class="small24">Телефона или e-mail*</label>
                                  </div>
                                  <div class="input_div">
-                                     <input type="text" class="phones_email" name="phone_email" placeholder="">
+                                     <input type="text" class="phones_emails inp2 valid" name="phone_email" placeholder="">
                                  </div>
                                  
                            </div>
-                             <div class="line_input">
+                           
                             <div class="inp_div">
                                  <div class="label_div">
-                                     <label for="phone_email" class="small24">Сообщение</label>
+                                     <label for="message" class="small24">Сообщение</label>
                                  </div>
                                  <div class="input_div">
-                                     <input type="text" class="names" name="name" placeholder="">
+                                     <input type="text" class="message inp2" name="message" placeholder="">
                                  </div>
                                  
                            </div>
@@ -373,11 +385,26 @@
                               <input type="button" class="my_feed_button phone btn" id="feed_button2" name="butt2" value="Отправить заявку">
                           </div>
                             
-                        </div>
+                        
+ </div>
+           
+            <div class="message_ok">
+                            <div class="b-form-success">
+    <p class="e-heading">Спасибо!</p>
 
+    <p>Ваша заявка принята.</p>
+    <p>Мы рады вашей заинтересованности и <br>постараемся оперативно <br>ответить вам.</p>
+    
+
+    <a class="x-button-2 js-modal-feedback-hide">Закрыть</a>
+</div>
+                        </div>
+                        
+                        
             </form>
-           </div>
+          
        </div>
+   </div>
    </div>
    <div class="modal_back"></div>   
         

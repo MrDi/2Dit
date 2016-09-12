@@ -1281,6 +1281,7 @@ input#feed_button1 {
     border-radius: 10px;
     font-size: 24px;
         cursor: pointer;
+        outline: none;
 }
 
 .label_div {
@@ -1308,12 +1309,12 @@ img.note_gif {
 
 
 .form_left_modal {
-    width: 400px;
+    width: 550px;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.64);
+    background: rgba(0, 0, 0, 0.77);
     -webkit-transform: perspective(2000px) rotateY(-90deg);
     -moz-transform: perspective(2000px) rotateY(-90deg);
     transform: perspective(2000px) rotateY(-90deg);
@@ -1374,4 +1375,117 @@ img.note_gif {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+}
+.small46 {
+    font-size: 46px;
+}
+
+.tittle.small46 {
+    color: white;
+    text-align: left;
+        margin-bottom: 52px;
+}
+
+form#form2 {
+    width: 100%;
+}
+
+.line_input {
+    padding: 40px;
+}
+
+
+#form2 label.small24 {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    color: white;
+}
+
+input.inp2 {
+    width: 100%;
+    height: 45px;
+  background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+    outline: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Etelka';
+}
+
+#form2 .label_div {
+    margin-bottom: 0px;
+}
+
+
+input.inp2:focus {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.17);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+input#feed_button2 {
+    width: 70%;
+    float: left;
+    height: 65px;
+    color: #fff;
+    background: none;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Etelka';
+    outline: none;
+    cursor: pointer;
+}
+
+.message_ok {
+    padding: 40px;
+    display: none;
+}
+
+.b-form-success p.e-heading {
+    color: white;
+    font-size: 58px;
+}
+
+.b-form-success p {
+    color: white;
+    font-weight: 100;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+form#form2 >.line_input.hide,form#form1 >.line_input.hide {
+    display: none;
+}
+
+
+a.x-button-2.js-modal-feedback-hide {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 45px;
+    border-radius: 4px;
+    margin-top: 29px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+
+#form1 .b-form-success p {
+    color: #000;
+}
+
+
+#form1 .message_ok {
+    padding-left: 0;
+    padding-top: 21px;
 }
