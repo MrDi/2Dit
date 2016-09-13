@@ -26,7 +26,7 @@
 		this._draw(val);
 		if( callback && typeof callback === 'function' ) {
 			// give it a time (ideally the same like the transition time) so that the last progress increment animation is still visible.
-			setTimeout( callback, 200 );
+			setTimeout( callback, 2000 );
 		}
 	}
 

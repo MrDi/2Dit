@@ -22,16 +22,19 @@ $(document).ready(function () {
     $slide_finish = false,
         $slide_first = true;
     
-
+ 
+  
     
     
+    
+  
 
     $('#fullpage').fullpage({
         menu: '#menu',
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         autoScrolling: true,
         fitToSection: true,
-        fitToSectionDelay: 200,
+        fitToSectionDelay: 2000,
         scrollBar: true,
         loopHorizontal: true,
         navigation: true,

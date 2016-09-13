@@ -1939,3 +1939,41 @@ a.x-button-2.js-modal-feedback-hide {
     padding-top: 21px;
 }
 
+
+
+.button--1, .button--1 .button__bg, .button--2, .button--4, .button--4 .button__bg, .button--5, .button--6, .button--7, .button--8, .button--9, .button--10 {
+    -webkit-font-smoothing: antialiased;
+    background-color: #222;
+    border: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: 0.1em;
+    color: white;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.1s ease-out;
+    -moz-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out;
+}
+
+
+svg.svg-filters {
+    height: 0;
+    width: 0;
+}
+div#component-7 {
+    width: 204px;
+    height: 123px;
+}
+
+
+section.section_svg_anim {
+    text-align: center;
+}
