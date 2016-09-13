@@ -59,7 +59,17 @@ h1.ip-logo {
 .ip-loader {
     height: 172px;
     position: absolute;
-    bottom: 0px;
+    bottom: 10%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .ip-logo,
 .ip-loader {
@@ -112,7 +122,7 @@ h1.ip-logo {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	-moz-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #ef6e7e;
+	    stroke: #161616;
 }
 
 /* Content */
@@ -197,27 +207,27 @@ h1.ip-logo {
 .loading .ip-logo,
 .loading .ip-loader {
 	opacity: 1;
-	-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
-	-moz-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
-	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+	-webkit-animation: animInitialHeader 1.4s cubic-bezier(0.7,0,0.3,1) both;
+	-moz-animation: animInitialHeader 1.4s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 1.4s cubic-bezier(0.7,0,0.3,1) both;
 }
 
 .loading .ip-loader {
-	-webkit-animation-delay: 0.2s;
-	-moz-animation-delay: 0.2s;
-	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
 
 @-webkit-keyframes animInitialHeader {
-	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,400px,0); }
 }
 
 @-moz-keyframes animInitialHeader {
-	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); -moz-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,400px,0); -moz-transform: translate3d(0,400px,0); transform: translate3d(0,400px,0); }
 }
 
 @keyframes animInitialHeader {
-	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); -moz-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+	from { opacity: 0; -webkit-transform: translate3d(0,400px,0); -moz-transform: translate3d(0,400px,0); transform: translate3d(0,400px,0); }
 }
 
 /* Header elements when loading finishes */

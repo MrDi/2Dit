@@ -66,8 +66,17 @@ $(".my_feed_button").click(function(e){
              $("#form"+click_id+" .inp2").val("");
              $("#form"+click_id+" .valid").val("");   
              $("#form"+click_id+" .valid").css('border-bottom','');
-             $("#form"+click_id+" > .line_input").addClass('hide');
-             $("#form"+click_id+" .message_ok").fadeIn();
+            
+             if(click_id ==1 ){
+                    $("#form"+click_id+"").addClass('hide');
+                    $("#form"+click_id+" + .message_ok").fadeIn();
+             }
+             else{
+              $("#form"+click_id+" .message_ok").fadeIn();
+                  $("#form"+click_id+" > .line_input").addClass('hide');
+             }
+            
+            
              
             },
             error:function (xhr, ajaxOptions, thrownError){

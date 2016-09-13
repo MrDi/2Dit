@@ -812,7 +812,7 @@ div#slide5 {
 
 .bottom-block {
         position: absolute;
-    bottom: 70px;
+    bottom: 10%;
     text-align: center;
     color: black;
     width: 100vw;
@@ -830,14 +830,30 @@ p.name_keys_sm {
     font-size: 32px;
 }
 
+.see_project:after {
+    content: '';
+    background: url(/images/Arrow_black.svg);
+    width: 19px;
+    height: 19px;
+    background-size: cover;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
 .slovo {
-    color: #7c7c7c;
+   color: #7c7c7c;
     font-weight: 300;
     padding-right: 100px;
-        padding: 0 23px 23px 23px;
+    padding: 0 23px 23px 23px;
     width: 68%;
     border-left: 4px solid black;
-       margin: 50px 0 10px 0;
+    margin: 50px 0 10px 0;
+   
+}
+
+.bloquete{
+     opacity: 0.1;
+    -webkit-transform: translateX(20%);
 }
 .bloquete:before {
     content: '«';
@@ -919,6 +935,24 @@ p.name_keys_sm {
     font-size: 19px;
     font-weight: 100;
     cursor: pointer;
+        width: 237px;
+    padding: 10px 0;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .intro p {
     color: #000;
@@ -1141,7 +1175,7 @@ p.link_to_site a:after {
     width: 99%;
     height: 84%;
     background: #f6f7fc;
-    top: -19%;
+    top: -53%;
     -webkit-transform-origin: 50%;
     -moz-transform-origin: 50%;
     -ms-transform-origin: 50%;
@@ -1175,7 +1209,7 @@ p.link_to_site a:after {
     -moz-transform-origin: 50%;
     -ms-transform-origin: 50%;
     transform-origin: 50%;
-    left: 80%;
+    left: 84%;
    
     -webkit-transform: rotateZ(61deg) translateX(51%);
    
@@ -2082,6 +2116,31 @@ p.order {
     background-repeat: no-repeat;
 }
 
+form#form1.hide {
+    display: none;
+}
+.left-second {
+    opacity: 0;
+}
+
+.anim_sl .bloquete {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: all 1s ease-in 1s;
+    -moz-transition: all 1s ease-in 1s;
+    transition: all 1s ease-in 1s;
+}
+
+
+.left-second.anim_sheet {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease 2s;
+    -moz-transition: opacity 1s ease 2s;
+    transition: opacity 1s ease 2s;
+}
 .soc.inst {
     background: url(/images/logo-instagram.svg);
     background-size: contain;

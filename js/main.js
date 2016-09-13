@@ -75,7 +75,7 @@
 							onEndHeaderAnimation();
 						}
 					}
-				}, 40 );
+				}, 80 );
 		};
 
 		loader.setProgressFn( simulationFn );
@@ -124,7 +124,7 @@ function initBt7() {
   } });
 
   btTl.to(turbVal, 0.4, { val: 0.4 });
-  btTl.to(turbVal, 0.2, { val: 0.000001 });
+  btTl.to(turbVal, 0.1, { val: 0.000001 });
 
   bt.addEventListener('click', function() {
     btTl.restart();

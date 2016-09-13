@@ -1,12 +1,14 @@
 $(document).ready(function () {
 
     var $right_block = $(".right-block"),
+        $left_block = $(".left-block"),
     $note = $("img.note"),
     $right_second =  $(".right-second"),
     $header = $(".header"),
     $img_page = $(".img_page1,.img_page2,.img_page3,.img_page4");
     
     var $layout1 = document.querySelector(".img_page1"),
+     $left_second = $("#section1 .left-second"),
        $back1 = document.querySelector(".back-1"),
          $slide3_text = document.querySelector(".intro.container-sm.center"),
          $back2 = document.querySelector(".back-2"),
@@ -15,6 +17,7 @@ $(document).ready(function () {
     $layout3 = document.querySelector(".img_page3"),
     $layout4 = document.querySelector(".img_page4"),
     $myBtn = document.querySelector(".button.first"),
+    $myBtn_top = $(".button.first"),
     $myForm = document.querySelector(".form_left_modal"),
     $fullPage = document.querySelector(".modal_back"),
     $button_fix = document.querySelector(".button_fix"),
@@ -29,7 +32,7 @@ $(document).ready(function () {
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         autoScrolling: true,
         fitToSection: true,
-        fitToSectionDelay: 2000,
+        fitToSectionDelay: 500,
         scrollBar: true,
         loopHorizontal: true,
         navigation: true,
@@ -43,10 +46,11 @@ $(document).ready(function () {
             }
             if (nextIndex == 2) {
                 $right_second.addClass('anim_sheet');
+                $left_second.addClass('anim_sheet');
             }
             if (nextIndex == 3) {
                 $right_block.addClass('anim_sl');
-               
+               $left_block.addClass('anim_sl');
                if(direction == 'down'  && index == 2 ){
                     $(".fp-controlArrow.fp-next").fadeOut();
                } 
@@ -257,11 +261,13 @@ function toggleClassMenu() {
  if($myForm.classList.contains("show_form")) {
      $myForm.classList.remove("show_form");
      $fullPage.classList.remove("show_modal");
+     $myBtn_top.fadeIn();
      
   } else {
    
       $myForm.classList.add("show_form");
       $fullPage.classList.add("show_modal");
+     $myBtn_top .fadeOut();
   }
  
 }

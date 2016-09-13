@@ -95,7 +95,7 @@
     
     .bottom-block {
   
-    bottom: 40px;
+    bottom: 10%;
   
 }
     
@@ -136,10 +136,11 @@
 }
     
     .center>*, .center> p.small20 {
-    text-align: center;
-    width: 61%;
-    margin: 27px auto;
+        text-align: center;
+    width: 66%;
+    margin: 31px auto;
     padding: 0;
+    line-height: 21px;
 }
     h2.slide4_h2 {
  font-size: 92px;
