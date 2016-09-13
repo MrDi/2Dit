@@ -53,8 +53,8 @@ $(document).ready(function () {
                     $(".fp-controlArrow.fp-next").fadeOut();
                } 
                 
-                 if(direction == 'up'  && index == 4 ){
-                    $("#fp-nav").fadeIn();
+                 if(direction == 'up'  && index == 4 && $slide_finish){
+                    $("#fp-nav").fadeOut();
                } 
                 
                 
