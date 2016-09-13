@@ -437,7 +437,19 @@ div#section2 .intro {
     width: 80px;
   
 }*/
+    .message_ok.bl .b-form-success p.e-heading {
+    font-size: 80px;
+}
     
+    .message_ok.bl .b-form-success >div {
+    padding: 0px 20px;
+}
+    
+   .message_ok.bl .b-form-success p {
+   
+    font-size: 20px;
+  
+}
     
 }
     

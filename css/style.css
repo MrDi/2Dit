@@ -1929,16 +1929,19 @@ a.x-button-2.js-modal-feedback-hide {
 }
 
 
-#form1 .b-form-success p {
+#form1 + .message_ok .b-form-success p {
     color: #000;
 }
 
 
-#form1 .message_ok {
-    padding-left: 0;
-    padding-top: 21px;
+#form1 + .message_ok {
+padding: 0;
 }
 
+
+#form1 .line_input {
+    padding: 0px;
+}
 
 
 .button--1, .button--1 .button__bg, .button--2, .button--4, .button--4 .button__bg, .button--5, .button--6, .button--7, .button--8, .button--9, .button--10 {
@@ -1962,8 +1965,15 @@ a.x-button-2.js-modal-feedback-hide {
     -moz-transition: background-color 0.1s ease-out;
     transition: background-color 0.1s ease-out;
 }
+.message_ok.bl {
+    color: #000;
+}
 
-
+#fp-nav {
+  
+    display: none;
+   
+}
 svg.svg-filters {
     height: 0;
     width: 0;
@@ -1972,8 +1982,109 @@ div#component-7 {
     width: 204px;
     height: 123px;
 }
+.message_ok.bl >div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
 
 
 section.section_svg_anim {
     text-align: center;
+}
+
+p.order {
+    /* height: 0; */
+    margin-top: -28px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.center-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.center-block p {
+    margin: 5px 0;
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+
+.center-block p:first-child {
+    font-weight: 400;
+}
+.message_ok.bl .b-form-success >div {
+    padding: 0px 40px;
+}
+
+.message_ok.bl  .b-form-success p.e-heading {
+   
+    font-size: 110px;
+}
+
+.social {
+    width: 40px;
+    height: 110px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+.soc {
+    width: 30px;
+    height: 30px;
+   
+}
+.soc.fb {
+    background: url(/images/logo-facebook.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.soc.vk {
+     background: url(/images/logo-vk.svg);
+   background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.soc.inst {
+    background: url(/images/logo-instagram.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }

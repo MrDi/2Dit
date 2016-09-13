@@ -45,6 +45,7 @@
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    z-index: 102;
 }
 
 .ip-header h1 {

@@ -14,7 +14,7 @@ $(document).ready(function () {
     $layout2 = document.querySelector(".img_page2"),
     $layout3 = document.querySelector(".img_page3"),
     $layout4 = document.querySelector(".img_page4"),
-    $myBtn = document.querySelector(".button"),
+    $myBtn = document.querySelector(".button.first"),
     $myForm = document.querySelector(".form_left_modal"),
     $fullPage = document.querySelector(".modal_back"),
     $button_fix = document.querySelector(".button_fix"),
@@ -22,13 +22,8 @@ $(document).ready(function () {
     $slide_finish = false,
         $slide_first = true;
     
- 
-  
+     
     
-    
-    
-  
-
     $('#fullpage').fullpage({
         menu: '#menu',
         anchors: ['firstPage', 'secondPage', '3rdPage'],
