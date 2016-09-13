@@ -12,10 +12,9 @@
     .fl_bl {
     margin-top: 0;
 }
-    .top {
-    margin-bottom: 179px;
+   .top {
+    margin-bottom: 145px;
 }
-    
     
     .right-second {
     
@@ -31,15 +30,20 @@
 }
     
     #section1 .intro.container-sm {
-    padding-top: 80px;
+        padding-top: 44px;
 }
-    
+     #section1 .intro.container-sm h2 {
+    margin-bottom: 37px;
+}
     p.name_keys {
   
        font-size: 60px;
   
 }
-    
+    .bord_img.two img {
+   
+    top: -80px;
+}
     p.name_keys_sm {
    
     font-size: 26px;
@@ -148,8 +152,10 @@
     font-size: 37px;
 }
 
-div#section2 .intro.container-sm.flex-center {
-    padding-top: 30px;
+div#section2 #slide4 .intro.container-sm.flex-center {
+   padding-top: 0px;
+    position: relative;
+    bottom: 10px;
 }
 
 div#section2 .intro {
@@ -195,19 +201,15 @@ div#section2 .intro {
     
     p.link_to_site a {
     
-    font-size: 11px;
+       font-size: 11px;
     font-weight: 100;
-  
     padding: 3px 7px;
     line-height: 4px;
     border-radius: 3px;
-
-   
     width: 156px;
- 
- 
     top: 32px;
     font-weight: 300;
+    letter-spacing: 0.8px;
 }
     
     .left-block.w70 .small20 {
@@ -278,7 +280,7 @@ div#section2 .intro {
     
     
    #section4 .intro.container-sm.flex-center {
-    padding-top: 101px;
+    padding-top: 16px;
 }
     
     input#feed_button1 {
@@ -370,5 +372,72 @@ div#section2 .intro {
     height: 26px;
   
 }
+    
+    .header {
+   
+        height: 70px;
+    }
+    
+    .button.first.fix {
+    color: #000;
+    font-size: 12px;
+    border-color: #000;
+    padding: 0px 13px;
+    line-height: 1px;
+    height: 37px;
+}
+    
+    .logo-fix a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 41px;
+}
+    
+    .logo img {
+    width: 70px;
+}
+    
+    .left-second, .right-second {
+    font-size: 15px;
+    
+}
+    .right-second.anim_sheet {
+  
+    -webkit-transform: rotateZ(58deg) translateX(-4%);
+  
+    -moz-transform: rotateZ(58deg) translateX(-4%);
+  
+    transform: rotateZ(58deg) translateX(-4%);
+   
+}
+    .bord_img.one img {
+    width: initial;
+    height: 107px;
+}
+    
+    .bord_img.two img {
+    width: 82%;
+}
+    .right-second>div {
+   
+    padding-left: 13%;
+}
+    
+/*    .fp-controlArrow.fp-prev,.fp-controlArrow.fp-next {
+   
+    width: 75px;
+  
+}*/
+/*    
+       .fp-controlArrow.fp-prev:hover,.fp-controlArrow.fp-next:hover {
+   
+    width: 80px;
+  
+}*/
+    
+    
 }
     

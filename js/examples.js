@@ -39,19 +39,25 @@ $(document).ready(function () {
         lockAnchors: true,
         navigationPosition: 'right',
         onLeave: function (index, nextIndex, direction) {
-        
+        console.log(nextIndex);
             if (nextIndex == 2) {
-                $(".fp-controlArrow.fp-prev").css('display', 'none');
+                $(".fp-controlArrow.fp-prev").fadeOut();
             }
             if (nextIndex == 2) {
                 $right_second.addClass('anim_sheet');
             }
             if (nextIndex == 3) {
                 $right_block.addClass('anim_sl');
-                $("#fp-nav").css('display', 'none');
-               if(direction == 'down'){
+               
+               if(direction == 'down'  && index == 2 ){
                     $(".fp-controlArrow.fp-next").fadeOut();
                } 
+                
+                 if(direction == 'up'  && index == 4 ){
+                    $("#fp-nav").fadeIn();
+               } 
+                
+                
             }
             if (nextIndex == 1) {
 
@@ -60,9 +66,18 @@ $(document).ready(function () {
 
             }
             
+             if (nextIndex == 5) {
+
+              $header.addClass('header-hidden');
+
+            }
+            else{
+                  $header.removeClass('header-hidden');
+            }
+            
              if (nextIndex == 4) {
-    console.log('4');
-              $header.removeClass('header-fixed');
+    
+            /*  $header.removeClass('header-fixed');*/
 
 
             }
@@ -108,11 +123,11 @@ $(document).ready(function () {
         afterLoad: function (anchorLink, index) {
    
             if (index != 3) {
-                $("#fp-nav").css('display', 'block');
+                $("#fp-nav").fadeIn();
       
             }
 
-            if (index != 1 && index != 3) {
+            if (index != 1 ) {
 
                $header.addClass('header-fixed');
             }
@@ -121,7 +136,8 @@ $(document).ready(function () {
         },
         onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
             if (nextSlideIndex == 1) {
-                
+                 $(".fp-controlArrow.fp-prev").fadeIn();
+                 $("#fp-nav").fadeOut();
                   var img = document.getElementById('gif_anim');
                    img.src = "images/notebook_landind.gif?" + new Date().getTime();
        /*  $note.src = $note.src;*/
@@ -129,8 +145,10 @@ $(document).ready(function () {
              /*   $note.after('<img class="note_gif" src="images/notebook_landind.gif" />');*/
                 
             }
-            if (nextSlideIndex === 0) {
+            if (nextSlideIndex === 0 && slideIndex == 1 ) {
                 $(".fp-controlArrow.fp-next").fadeOut();
+                $(".fp-controlArrow.fp-prev").fadeOut();
+                $("#fp-nav").fadeIn();
                  $progress.removeClass();
             }
             
@@ -140,6 +158,7 @@ $(document).ready(function () {
             
             if(slideIndex == 4 && nextSlideIndex == 0){
                 $slide_finish = true;
+                  $(".fp-controlArrow.fp-prev").fadeIn();
             }
             else{
                 $slide_finish = false;
@@ -167,6 +186,7 @@ $(document).ready(function () {
             if (nextSlideIndex == 3) {
                 $(".notebook.right").addClass('anim_note');
                    $progress.removeClass().addClass('pos3');
+                $(".fp-controlArrow.fp-next").removeClass('arrow_down');
                
             }
             
@@ -176,7 +196,9 @@ $(document).ready(function () {
                 $layout3.classList.add("anim");
                 $layout4.classList.add("anim"); 
                    $progress.removeClass().addClass('pos4');
+                 $(".fp-controlArrow.fp-next").addClass('arrow_down');
             }
+            
 
             if (nextSlideIndex == 0 && slideIndex == 4) {
                
@@ -186,7 +208,7 @@ $(document).ready(function () {
             }
 
             if (nextSlideIndex == 4 && slideIndex == 0) {
-                $(".fp-controlArrow.fp-prev").css('display', 'none');
+           /*     $(".fp-controlArrow.fp-prev").css('display', 'none');*/
                 $.fn.fullpage.moveSectionUp();
                 return false;
             }
