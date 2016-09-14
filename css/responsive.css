@@ -162,7 +162,10 @@ div#section2 #slide4 .intro.container-sm.flex-center {
 div#section2 .intro {
     padding-top: 37px;
 }
-    
+   section.section_svg_anim p {
+    font-size: 22px;
+    font-weight: 300;
+} 
     .block-rotate {
    
     -webkit-transform: rotateZ(-33deg) translateX(-169px);

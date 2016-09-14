@@ -1,8 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-@import "compass/css3";
-
-@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -1030,6 +1027,7 @@ h2.slide4_h2 {
 }
 .intro .small42 {
     font-size: 42px;
+    font-weight: 100;
 }
 .intro .small36 {
     font-size: 36px;
@@ -1707,8 +1705,12 @@ img.img_page4.anim {
 
 
 p.small69.phone_number,p.small36.mail {
-      color: #8a8a8a;
+      color: #000000;
     font-weight: 100;
+}
+
+p.small69.phone_number{
+     font-weight: 300;
 }
 .flex-block_form {
     display: -webkit-box;
@@ -1757,27 +1759,55 @@ label.small24 {
 }
 
 input#feed_button1 {
-    width: 100%;
+        width: 100%;
     height: 68px;
     background: transparent;
     border: 2px solid black;
     border-radius: 10px;
-    font-size: 24px;
-        cursor: pointer;
-        outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
 }
 
 .label_div {
     margin-bottom: 23px;
 }
-
+section.section_svg_anim p {
+    font-size: 28px;
+    font-weight: 300;
+    width: 37%;
+}
 .inp_div {
     margin-bottom: 39px;
 }
-
+section.section_svg_anim > * {
+    
+}
 .right-grid-form {
     position: relative;
     top: 38px;
+}
+
+section.section_svg_anim {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
 }
 
 img.note_gif {
@@ -2014,7 +2044,10 @@ svg.svg-filters {
 }
 div#component-7 {
     width: 204px;
-    height: 123px;
+    height: 168px;
+    width: 26%;
+    background-position: 50%;
+    padding: 0;
 }
 .message_ok.bl >div {
     display: -webkit-box;

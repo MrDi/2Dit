@@ -97,9 +97,9 @@ h1.ip-logo {
 }
 
 .ip-header .ip-logo svg {
-	 min-width: 320px;
+	 min-width: 0;
     max-width: 563px;
-    width: 71%;
+    width: 0%;
     max-height: 338px;
     margin: 0 auto;
     display: block;
