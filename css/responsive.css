@@ -382,6 +382,11 @@ div#section2 .intro {
    .mouse_svg svg {
     width: 70%;
 } 
+	
+	.first_tittle p {
+    font-size: 24px;
+}
+	
     .button.first:before {
   
     width: 35px;

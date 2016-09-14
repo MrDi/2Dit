@@ -49,6 +49,12 @@
     z-index: 102;
 }
 
+
+.ip-loader {
+   /* visibility: hidden;*/
+}
+
+
 .ip-header h1 {
 	margin: 0;
 }
