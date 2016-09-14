@@ -1989,6 +1989,7 @@ img.img_page4.anim {
 	box-sizing: border-box;
 	margin: 13px 0;
 	overflow: hidden;
+	    background: white;
 }
 
 .grid > div > h3 {
@@ -2007,7 +2008,9 @@ img.img_page4.anim {
 	text-align: right;
 	margin-top: 42px;
 }
-
+#section3 h2.big92 {
+    font-weight: 500;
+}
 .intro .grid .box-1 p.small32.price {
 	color: #6669ea;
 }
@@ -2049,7 +2052,7 @@ img.img_page4.anim {
 }
 
 #section4 h2.slide4_h2 {
-	font-size: 116px;
+	font-size: 91px;
 	text-align: justify;
 }
 
