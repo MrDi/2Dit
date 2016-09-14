@@ -62,8 +62,8 @@ $(document).ready(function () {
 					$("#form" + click_id + " .valid").val("");
 					$("#form" + click_id + " .valid").css('border-bottom', '');
 
-					if (click_id === 1) {
-						$("#form" + click_id + "").addClass('hide');
+					if (click_id == 1) {
+						$("#form" + click_id).addClass('hide');
 						$("#form" + click_id + " + .message_ok").fadeIn();
 					} else {
 						$("#form" + click_id + " .message_ok").fadeIn();

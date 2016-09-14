@@ -125,7 +125,7 @@
     
     p.small20 {
     font-size: 15px;
-  
+  line-height: 18px;
   
     margin: 12px 0;
     width: 408px;
@@ -228,8 +228,8 @@ div#section2 .intro {
     
     .left-block.w70 .small20 {
    
-    width: 54%;
-    margin-left: 45%;
+    width: 56%;
+    margin-left: 44%;
 }
     
     .big92 {
@@ -245,7 +245,17 @@ div#section2 .intro {
     margin: 20px 0;
     font-size: 17px;
 }
-    
+    #section3 h2.big92 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+	
+	#form2 .b-form-success p {
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 20px 0;
+}
     .grid {
    
     margin-top: 10px;
@@ -261,7 +271,7 @@ div#section2 .intro {
     
     .grid > div {
     width: 49.4%;
-    border: 1px solid #8d8d8d;
+  
     padding: 2%;
     border-radius: 8px;
     -moz-box-sizing: border-box;
@@ -279,7 +289,7 @@ div#section2 .intro {
 }
     
     #section4 h2.slide4_h2 {
-       font-size: 87px;
+       font-size: 70px;
     text-align: justify;
     line-height: 81px;
 }
@@ -300,9 +310,7 @@ div#section2 .intro {
     input#feed_button1 {
   
     height: 55px;
-    background: transparent;
-    border: 2px solid black;
-    border-radius: 10px;
+ 
     font-size: 21px;
     
 }
@@ -466,11 +474,19 @@ div#section2 .intro {
     padding: 0px 20px;
 }
     
-   .message_ok.bl .b-form-success p {
    
+	.message_ok.bl .b-form-success .center-block p {
     font-size: 20px;
-  
 }
+	
+	p.small20.swing.anim {
+    letter-spacing: 0.7px;
+        line-height: 18px;
+    font-size: 14px;
+}
+	#form2 .b-form-success p.e-heading {
+    font-size: 50px;
+}	
     
 }
     
