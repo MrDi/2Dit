@@ -166,6 +166,16 @@ div#section2 .intro {
     font-size: 22px;
     font-weight: 300;
 } 
+	
+	p.order {
+    margin-top: -29px;
+   
+
+    padding: 8px;
+ 
+    font-size: 15px;
+  
+}
     .block-rotate {
    
     -webkit-transform: rotateZ(-33deg) translateX(-169px);
@@ -351,7 +361,7 @@ div#section2 .intro {
     font-weight: 100;
     font-size: 18px;
 }
-    .mouse:before {
+/*    .mouse:before {
     content: '';
     width: 27px;
     height: 42px;
@@ -362,14 +372,16 @@ div#section2 .intro {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: 0;
-}
+}*/
     
     .button.first {
    
     font-size: 15px;
   
 }
-    
+   .mouse_svg svg {
+    width: 70%;
+} 
     .button.first:before {
   
     width: 35px;

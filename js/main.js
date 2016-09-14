@@ -18,7 +18,7 @@
 		// animation end event name
 		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
         var btTl = new TimelineLite({ paused: true, onUpdate: function() {
-    turb.setAttribute('baseFrequency', '0.00001 ' + turbVal.val); // Firefox bug is value is 0
+    turb.setAttribute('baseFrequency', '0.00000101 ' + turbVal.val); // Firefox bug is value is 0
   } });
 	function init() {
 		var onEndInitialAnimation = function() {
@@ -75,7 +75,7 @@
 							onEndHeaderAnimation();
 						}
 					}
-				}, 80 );
+				}, 80);
 		};
 
 		loader.setProgressFn( simulationFn );

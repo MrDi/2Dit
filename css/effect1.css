@@ -19,6 +19,7 @@
 		url('../fonts/feather/feather.svg?-9jv4cc#feather') format('svg');
 }
 
+
 .ip-header {
 	
         position: fixed;
@@ -75,6 +76,7 @@ h1.ip-logo {
 .ip-loader {
 	position: absolute;
 	left: 0;
+	overflow: hidden;
 	width: 100%;
 	opacity: 0;
 	cursor: default;
