@@ -12,6 +12,7 @@
 
 	var support = { animations : Modernizr.cssanimations },
 		container = document.getElementById( 'ip-container' ),
+		section0 = document.getElementById( 'section0' ),
 		header = container.querySelector( 'header.ip-header' ),
 		loader = new PathLoader( document.getElementById( 'ip-loader-circle' ) ),
 		animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
@@ -56,6 +57,7 @@
 					if( progress === 1 ) {
 						classie.remove( container, 'loading' );
 						classie.add( container, 'loaded' );
+						
 						clearInterval( interval );
 
 						var onEndHeaderAnimation = function(ev) {
@@ -79,7 +81,7 @@
 		};
 
 		loader.setProgressFn( simulationFn );
-        
+       
          btTl.restart();
 	}
 	
